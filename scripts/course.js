@@ -78,3 +78,53 @@ const courses = [
     }
 ]
 
+const credits = document.querySelector('#credits');
+
+createCoursesCard(courses);
+determineCredits(courses);
+
+const allCourses = document.querySelector('#all');
+const cseCourses = document.querySelector('#cse');
+const wddCourses = document.querySelector('#wdd');
+
+allCourses.addEventListener('click', () => {
+    createCoursesCard(courses);
+    determineCredits(courses);
+});
+cseCourses.addEventListener('click', () => {
+    let cseCoursesList = courses.filter(course => course.subject == "CSE");
+    createCoursesCard(cseCoursesList);
+    determineCredits(cseCoursesList);
+});
+wddCourses.addEventListener('click', () => {
+    let wddCoursesList = courses.filter(course => course.subject == "WDD");
+    createCoursesCard(wddCoursesList);
+    determineCredits(wddCoursesList);
+});
+
+
+function createCoursesCard(coursesList) {
+    document.querySelector('.courses-info').innerHTML = "";
+
+    coursesList.forEach(course => {
+        let card = document.createElement('section');
+        let name = document.createElement('p')
+
+        name.innerHTML = `${course.subject} ${course.number}`;
+
+        card.setAttribute("class", "course-card");
+
+        if (course.completed == false) {
+            card.classList.add('incomplete');
+        }
+        card.appendChild(name);
+
+        document.querySelector('.courses-info').appendChild(card);
+
+    });
+}
+function determineCredits(coursesList) {
+    const total = coursesList.reduce((accumulator, currentValue) => accumulator + currentValue.credits, 0);
+    credits.innerHTML = total; 
+}
+

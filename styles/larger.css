@@ -1,34 +1,57 @@
 @media only screen and (min-width: 38rem) {
 
-    main{
+    main {
         max-width: 1200px;
         margin: 0 auto;
     }
 
 
-    header{
+    header {
         grid-template-columns: 24px auto;
     }
 
-    .hamburger{
+    header span {
+        font-size: 1.2rem;
+    }
+
+    .hamburger {
         display: none;
     }
-    .navigation{
+
+    .navigation {
         display: block;
     }
-    .navigation ul{
+
+    .navigation ul {
         display: flex;
         flex-direction: row;
     }
-    .navigation li{
+
+    .navigation li {
         flex: 1 1 auto;
         font-size: 1.5vw;
     }
 
 
-    .info-grid{
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-}
+    .info-grid {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+    }
 
+
+    /**** Course Cards ****/
+
+    .courses-info {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .courses h2 {
+        margin: 10px;
+    }
+
+    .course-buttons button {
+        padding: 10px 50px;    
+        font-size: 1.5rem;
+    }
 }
