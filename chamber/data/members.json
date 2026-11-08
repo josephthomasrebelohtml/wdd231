@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Éconofitness 24/7",
+            "address": "320 Boulevard Saint-Joseph, Gatineau, Quebec J8Y 3Y8",
+            "phoneNumber": "+1 819-525-1843",
+            "website": "https://econofitness.ca/fr/gym/outaouais/320-boul-saint-joseph?utm_source=Google&utm_medium=GMB&utm_campaign=gatineau-galeries-hull",
+            "image": "images/econo-logo.webp",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Audrey CutiePies Bakery",
+            "address": "895 Rue Jacques-Cartier, Gatineau, QC J8T 2W3",
+            "phoneNumber": "+1 418-299-1972",
+            "website": "#",
+            "image": "images/bakery-logo.webp",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Le Palais Libanais",
+            "address": "332 Boul. Gréber #555, Gatineau, Quebec J8T 8H4",
+            "phoneNumber": "+1 819-600-9001",
+            "website": "https://www.lepalaislibanais.com/",
+            "image": "images/palais-logo.webp",
+            "membershipLevel": "Member"
+        },
+        {
+            "name": "Gatineau Football Club",
+            "address": "225 Rue Saint-Rédempteur, Gatineau, QC J8X 2T4",
+            "phoneNumber": "+1 829-771-3201",
+            "website": "#",
+            "image": "images/football-logo.webp",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Altitude Gym Gatineau",
+            "address": "35 Bd Saint-Raymond, Gatineau, QC J8Y 1R5",
+            "phoneNumber": "+1 819-205-0852",
+            "website": "https://altitudegym.ca/gatineau/",
+            "image": "images/altitude-logo.webp",
+            "membershipLevel": "Member"
+        },
+        {
+            "name": "Best Buy | Les Galeries Gatineau",
+            "address": "920 Bd Maloney O, Gatineau, QC J8T 3R6",
+            "phoneNumber": "+1 866-237-1803",
+            "website": "https://stores.bestbuy.ca/en-ca/qc/gatineau/920-maloney-blvd-w",
+            "image": "images/best-buy-logo.webp",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Village Des Valeurs",
+            "address": "361 Bd Maloney O, Gatineau, QC J8P 3W1",
+            "phoneNumber": "+1 819-663-4216",
+            "website": "https://magasinage.villagedesvaleurs.com/qc/gatineau/villagedesvaleurs-magasin-doccasions-2070.html",
+            "image": "images/village-logo.webp",
+            "membershipLevel": "Silver"
+        }
+    ]
+}
