@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue-color:#15388C;
+    --green-color: #04670E;
+    --text-color: #FFFFFF;
+    --background-color: #004687;
+}
+
+
+body {
+
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+/* Header */
+
+header {
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.1fr 1fr 1fr;
+    align-items: center;
+    border-bottom: solid 3px var(--blue-color);
+}
+
+header span {
+    font-size: 2.2vw;
+}
+
+/** Header Hamburguer **/
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--text-color);
+    text-align: end;
+    padding: 10px;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/*** Navigation ***/
+
+.navigation ul {
+    list-style-type: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 10px;
+    color: black;
+    text-decoration: none;
+    border-bottom: solid 1px black;
+}

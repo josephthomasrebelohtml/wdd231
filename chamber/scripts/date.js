@@ -1,7 +1,4 @@
-const year = document.querySelector("#currentyear")
-
-const today = new Date()
-
-year.innerHTML = `${today.getFullYear()}`
+document.querySelector('#currentYear').innerHTML = new Date().getFullYear();
 
 document.getElementById("lastModified").textContent = document.lastModified;
+

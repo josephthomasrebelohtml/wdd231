@@ -1,0 +1,33 @@
+@media (min-width: 600px) {
+    .hamburger {
+        display: none;
+    }
+
+    /* Navigation */
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        border-bottom: solid 3px var(--blue-color);
+    }
+
+    .navigation li {
+        flex: 1 1 auto;
+        font-size: 1.5vw;
+        padding: 0px 10px;
+    }
+
+    .navigation a {
+        border-bottom: none;
+    }
+
+    /* Main */
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
