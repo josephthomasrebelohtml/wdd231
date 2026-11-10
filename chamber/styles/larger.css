@@ -1,4 +1,8 @@
 @media (min-width: 600px) {
+
+    header span{
+        font-size: 2rem;
+    }
     .hamburger {
         display: none;
     }
@@ -22,7 +26,7 @@
 
     .navigation a {
         border-bottom: none;
-        padding: 10px 20px ;
+        padding: 10px 20px;
     }
 
     /* Main */
@@ -31,20 +35,40 @@
         margin: 0 auto;
     }
 
+    .members.grid section {
+        width: 320px;
+    }
+
+    .grid .business-contact a {
+        font-size: 0.9rem;
+    }
+
+    .members.list section {
+        grid-template-columns: 0.4fr 1fr;
+        
+    }
+
+    .list .business-contact {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
 
     /* Footer */
 
-    footer{
+    footer {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         place-items: center;
     }
 
-    footer img{
+    footer img {
         width: 50px;
         height: auto;
         margin: 10px;
     }
+
     footer img:hover {
         padding: 3px;
         background-color: rgba(0, 0, 0, 0.4);
