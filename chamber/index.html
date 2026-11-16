@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | GEC Chamber of Commerce</title>
+    <meta name="description"
+        content="Directory page for the Gatineau Economic Consortium website, including information for participating businesses and how to contact them.">
+    <meta name="author" content="Joseph Thomas Rebelo La Rocque da Silva">
+
+    <meta property="og:title" content="GEC - Gatineau Chamber Of Commerce | Directory">
+    <meta property="og:description"
+        content="Directory page for the Gatineau Economic Consortium website, including information for participating businesses and how to contact them.">
+    <meta property="og:image" content="https://josephthomasrebelohtml.github.io/wdd231/chamber/images/logo.webp">
+    <meta property="og:url" content="https://josephthomasrebelohtml.github.io/wdd231/chamber/directory.html">
+
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/index.mjs"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+    <header>
+
+        <img src="images/logo.webp" alt="logo for the GEC or Gatineau Economic Consortium" width="125" height="125">
+        <span>Chamber Of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="hamburger button"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current" aria-current="page"><a href="#">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main id="index-main">
+        <h1>Welcome To Gatineau!</h1>
+        <div class="index-hero">
+            <img src="images/hero-image.webp" alt="city of Gatineau under a beautiful sunset." class="hero-image"
+                width="800" loading="lazy">
+            <button><a href="#">Join Our Team!</a></button>
+        </div>
+
+        <div class="index-events">
+            <h2>Upcoming Events</h2>
+            <section class="index-event-card">
+                <img src="images/event-1.webp"
+                    alt="downtown Gatineau in the evening, containing several people walking around." loading="lazy">
+                <h3>Downtown Networking Night </h3>
+                <p>11/27/2026</p>
+                <p>After a long week of hard work, all members are invited to join us in a night out visiting our city's
+                    beautiful downtown
+                    area. Discover some of the best restaurants talk with your fellow entrepreneurs while strolling next
+                    to the Ottawa River
+                    and relax while we handle all the planning for this night. </p>
+            </section>
+
+            <section class="index-event-card">
+                <img src="images/event-2.webp" alt="many people sitting down in a business conference room"
+                    loading="lazy">
+                <h3>Business Discussion Morning</h3>
+                <p>11/30/2026</p>
+                <p>Start the week off with a meeting between all members and our invited experienced entrepreneurs while
+                    we talk about
+                    tactics, plans and methods to increase efficiency, profits, public relations and streamlining costs
+                    while in a relaxed
+                    environment prepared to help you share your knowledge and improve your business.</p>
+            </section>
+        </div>
+
+        <div class="index-weather">
+            <h2>Weather</h2>
+            <h3>Today</h3>
+            
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <p id="current-temp"></p>
+            <div class="index-forecast" id="forecast">
+                <h3>Forecast</h3>
+                <div id="forecast-info"></div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="index-spotlights">
+            <h2>Some Of Our Members</h2>
+            <div id="member-cards"></div>
+        </div>
+    </main>
+    <footer>
+
+        <div class="contact">
+            <h2>Gatineau Economic Consortium</h2>
+            <p>320 Boulevard Saint-Joseph, Gatineau, Quebec J8Y 3Y8</p>
+            <p>info@gec.org</p>
+            <p>+1 819-329-9022</p>
+        </div>
+
+        <div class="social">
+            <a href="https://facebook.com" target="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"
+                    width="16" height="16" loading="lazy"></a>
+            <a href="https://github.com/josephthomasrebelohtml/wdd231"
+                target="https://github.com/josephthomasrebelohtml/wdd231"><img src="images/github.svg" alt="Github"
+                    width="16" height="16" loading="lazy"></a>
+            <a href="https://instagram.com" target="https://instagram.com"><img src="images/instagram.svg"
+                    alt="Instagram" width="16" height="16" loading="lazy"></a>
+        </div>
+
+        <div class="footer-copyright">
+            <p>©️<span id="currentYear"></span>🐦‍⬛ Joseph Thomas Rebelo La Rocque da Silva 🐦‍⬛ WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
