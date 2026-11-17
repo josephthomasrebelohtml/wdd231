@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory | GEC Chamber of Commerce</title>
+    <title>Home | GEC Chamber of Commerce</title>
     <meta name="description"
-        content="Directory page for the Gatineau Economic Consortium website, including information for participating businesses and how to contact them.">
+        content="Homepage for the Gatineau Economic Consortium website, including information for events happening, certain high-ranking members and the weather.">
     <meta name="author" content="Joseph Thomas Rebelo La Rocque da Silva">
 
-    <meta property="og:title" content="GEC - Gatineau Chamber Of Commerce | Directory">
+    <meta property="og:title" content="GEC - Gatineau Chamber Of Commerce | Home">
     <meta property="og:description"
-        content="Directory page for the Gatineau Economic Consortium website, including information for participating businesses and how to contact them.">
+        content="Homepage for the Gatineau Economic Consortium website, including information for events happening, certain high-ranking members and the weather.">
     <meta property="og:image" content="https://josephthomasrebelohtml.github.io/wdd231/chamber/images/logo.webp">
-    <meta property="og:url" content="https://josephthomasrebelohtml.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://josephthomasrebelohtml.github.io/wdd231/chamber/index.html">
 
 
     <!-- Style Sheets -->
@@ -90,16 +90,21 @@
 
         <div class="index-weather">
             <h2>Weather</h2>
-            <h3>Today</h3>
+            <div class="today-weather">            <h3>Today</h3>
             
             <figure>
                 <img id="weather-icon" src="" alt="">
                 <figcaption></figcaption>
             </figure>
-            <p id="current-temp"></p>
+            <p id="current-temp"></p></div>
+
             <div class="index-forecast" id="forecast">
                 <h3>Forecast</h3>
-                <div id="forecast-info"></div>
+                <div id="forecast-info">
+                    <p id="forecast-one"></p>
+                    <p id="forecast-two"></p>
+                    <p id="forecast-three"></p>
+                </div>
             </div>
 
 
@@ -109,7 +114,7 @@
 
         <div class="index-spotlights">
             <h2>Some Of Our Members</h2>
-            <div id="member-cards"></div>
+            <div id="member-cards" class="members grid"></div>
         </div>
     </main>
     <footer>

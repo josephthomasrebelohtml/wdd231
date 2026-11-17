@@ -28,7 +28,7 @@ async function getWeatherData(url,functionName) {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            
             functionName(data);
         } else {
             throw new Error(await response.text());
@@ -38,8 +38,29 @@ async function getWeatherData(url,functionName) {
     }
 }
 
+async function getForecastData(url) {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            
+            return data;
+            
+        } else {
+            throw new Error(await response.text());
+        }
+    } catch (error) {
+        console.error(error);
+    }
+}
+
 getWeatherData(weatherUrl,displayWeather);
-// getWeatherData(forecastUrl);
+const forecastData = await getForecastData(forecastUrl);
+
+displayForecast(forecastData, 1, 'forecast-one');
+displayForecast(forecastData, 2, 'forecast-two');
+displayForecast(forecastData, 3, 'forecast-three');
+
 
 
 
