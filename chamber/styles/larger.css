@@ -75,7 +75,7 @@
 
     /* Index Page */
 
-    .index-hero button {
+    .index-hero a {
         bottom: 30px;
         left: 43%;
         padding: 10px;

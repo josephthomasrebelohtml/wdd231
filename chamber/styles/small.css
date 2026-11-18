@@ -283,22 +283,19 @@ footer img:hover {
     border-radius: 10px;
 }
 
-.index-hero button {
+.index-hero a {
     position: absolute;
     bottom: 30px;
     left: 30%;
     background-color: var(--green-color);
     border: solid 3px rgba(0, 0, 0, 0.3);
     padding: 5px;
-}
-
-.index-hero a {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
 }
 
-.index-hero button:hover {
+.index-hero a:hover {
     background-color: var(--blue-color);
     font-weight: 500;
 }
@@ -316,44 +313,48 @@ footer img:hover {
 }
 
 .index-event-card {
-    
     display: flex;
     flex-direction: column;
     text-align: center;
     border: solid 1px rgba(128, 128, 128, 0.5);
-    padding: 1px;
+    
     height: 480px;
     border-radius: 5px;
     width: 300px;
 }
 
-.index-event-card img{
-        max-width: 100%;
-        width: auto;
-        height: 180px;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
-    
+.index-event-card img {
+    max-width: 100%;
+    width: auto;
+    height: 180px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     border-radius: 2px;
     padding-top: 0.5px;
 }
-.index-event-card h3{
+
+.index-event-card h3 {
     background-color: var(--blue-color);
     color: #fff;
-    padding: 3px 0px;
-    margin-bottom: 5px;
+    padding: 10px 0px;
 }
-.index-event-date{
-    margin-top: 1px;
-    padding-bottom: 5px;
-    border-bottom: solid 2px var(--blue-color);
+
+.index-event-date {
+    background-color: #87CEFA;
+    color: #142D4E;
+    font-weight: 700;
+    padding: 5px;
 }
 
 .index-events h2 {
     text-align: center;
 }
-.index-event-description{
-    margin-top: 50px;
+
+.index-event-description {
+    margin-top: 20px;
+    letter-spacing: 1px;
+    padding: 2px;
+    font-size: 0.95rem;
 }
 
 .index-spotlights h2 {
