@@ -103,7 +103,7 @@ main {
     padding: 2px;
 }
 
-.filter-option{
+.filter-option {
     background-color: var(--green-color);
     border: none;
     color: #fff;
@@ -112,7 +112,7 @@ main {
     border-radius: 5px;
 }
 
-.filter-option:hover{
+.filter-option:hover {
     border: solid 2px black;
     cursor: pointer;
     font-weight: 700;
@@ -266,70 +266,148 @@ footer img:hover {
 
 /* Main */
 
-#index-main h1{
+#index-main h1 {
     text-align: center;
 }
 
-.index-hero{
+.index-hero {
     text-align: center;
     position: relative;
-    
+
 }
-.index-hero img{
+
+.index-hero img {
     display: block;
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
     border-radius: 10px;
 }
 
-.index-hero button{
+.index-hero button {
     position: absolute;
     bottom: 30px;
-    left: 43%;
-    background-color: var(--green-color);   
+    left: 30%;
+    background-color: var(--green-color);
     border: solid 3px rgba(0, 0, 0, 0.3);
-    padding: 10px;
+    padding: 5px;
 }
 
-.index-hero a{
+.index-hero a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
-.index-hero button:hover{
+
+.index-hero button:hover {
     background-color: var(--blue-color);
     font-weight: 500;
 }
 
-.index-spotlights h2{
+.index-events {
+    margin: 20px 0px;
+}
+
+.index-event-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.index-event-card {
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: solid 1px rgba(128, 128, 128, 0.5);
+    padding: 1px;
+    height: 480px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.index-event-card img{
+        max-width: 100%;
+        width: auto;
+        height: 180px;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    
+    border-radius: 2px;
+    padding-top: 0.5px;
+}
+.index-event-card h3{
+    background-color: var(--blue-color);
+    color: #fff;
+    padding: 3px 0px;
+    margin-bottom: 5px;
+}
+.index-event-date{
+    margin-top: 1px;
+    padding-bottom: 5px;
+    border-bottom: solid 2px var(--blue-color);
+}
+
+.index-events h2 {
+    text-align: center;
+}
+.index-event-description{
+    margin-top: 50px;
+}
+
+.index-spotlights h2 {
     text-align: center;
     padding: 20px 0px 5px 0px;
 }
 
 /* Index/Weather Section */
 
-.index-weather{
+.index-weather {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 1fr 0.1fr;
     text-align: center;
-    gap: 10px;
+    border: solid 1px rgba(128, 128, 128, 0.5);
+    margin: 10px;
+    padding: 0px 0px;
+    border-radius: 5px;
 }
 
-.forecast-info{
+.index-weather h2 {
+    padding: 5px;
+    border-bottom: solid 2px var(--blue-color);
+    font-size: 2rem;
+}
+
+#current-temp {
+    margin-bottom: 10px;
+}
+
+.forecast-info {
     display: flex;
     flex-direction: column;
+
 }
-.index-forecast h3{
+
+#forecast-one {
+    padding-top: 5px;
+}
+
+#forecast-three {
+    padding-bottom: 10px;
+}
+
+.index-weather h3 {
     padding: 10px;
-    margin-bottom: 2px ;
-    background-color: var(--green-color);
+    margin-bottom: 2px;
+    background-color: var(--blue-color);
     color: #fff;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 /* Today Weather */
 
-figcaption{
+figcaption {
     text-transform: capitalize;
 }

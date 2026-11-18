@@ -1,8 +1,9 @@
 @media (min-width: 600px) {
 
-    header span{
+    header span {
         font-size: 2rem;
     }
+
     .hamburger {
         display: none;
     }
@@ -45,7 +46,7 @@
 
     .members.list section {
         grid-template-columns: 0.4fr 1fr;
-        
+
     }
 
     .list .business-contact {
@@ -54,10 +55,11 @@
         text-align: center;
     }
 
-    .list .business-contact span{
+    .list .business-contact span {
         font-size: 0.9rem;
     }
-    .list .business-contact p{
+
+    .list .business-contact p {
         padding: 0px 10px;
     }
 
@@ -68,5 +70,23 @@
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         place-items: center;
+    }
+
+
+    /* Index Page */
+
+    .index-hero button {
+        bottom: 30px;
+        left: 43%;
+        padding: 10px;
+
+    }
+
+    .index-hero a {
+        font-size: 1.5rem;
+    }
+
+    .index-hero img{
+        width: 80%;
     }
 }
