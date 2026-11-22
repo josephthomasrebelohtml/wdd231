@@ -77,6 +77,10 @@ const courses = [
         completed: false
     }
 ]
+const modal = document.querySelector('#course-details');
+const closeModal = document.querySelector('#closeModal');
+
+
 
 const credits = document.querySelector('#credits');
 
@@ -107,9 +111,11 @@ function createCoursesCard(coursesList) {
     document.querySelector('.courses-info').innerHTML = "";
 
     coursesList.forEach(course => {
-        let card = document.createElement('section');
+        let card = document.createElement('button');
         let name = document.createElement('p')
-
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
         name.innerHTML = `${course.subject} ${course.number}`;
 
         card.setAttribute("class", "course-card");
@@ -128,3 +134,38 @@ function determineCredits(coursesList) {
     credits.innerHTML = total; 
 }
 
+
+function displayCourseDetails(course) {
+    modal.innerHTML = '';
+    
+    let courseSubject = document.createElement('h2');
+    let closeButton = document.createElement('button');
+    let courseTitle = document.createElement('h3');
+    let courseCredits = document.createElement('p');
+    let courseCertificate = document.createElement('p');
+    let courseDescription = document.createElement('p');
+    let courseTechnology = document.createElement('p');
+
+    closeButton.setAttribute('id', 'close-modal');
+    closeButton.innerHTML = '❌';
+    closeButton.addEventListener('click', () => {
+        modal.close();
+    });
+
+    courseSubject.innerHTML = `${course.subject} ${course.number}`;
+    courseTitle.innerHTML = `${course.title}`
+    courseCredits.innerHTML = `${course.credits} Credits`;
+    courseCertificate.innerHTML = `Certificate: ${course.certificate}`;
+    courseDescription.innerHTML = `${course.description}`;
+    courseTechnology.innerHTML = `Technologies: ${course.technology}`;
+
+    modal.appendChild(courseSubject);
+    modal.appendChild(closeButton);
+    modal.appendChild(courseTitle);
+    modal.appendChild(courseCredits);
+    modal.appendChild(courseCertificate);
+    modal.appendChild(courseDescription);
+    modal.appendChild(courseTechnology);
+
+    modal.showModal();
+}

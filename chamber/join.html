@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | GEC Chamber of Commerce</title>
+    <meta name="description"
+        content="Homepage for the Gatineau Economic Consortium website, including information for events happening, certain high-ranking members and the weather.">
+    <meta name="author" content="Joseph Thomas Rebelo La Rocque da Silva">
+
+    <meta property="og:title" content="GEC - Gatineau Chamber Of Commerce | Home">
+    <meta property="og:description"
+        content="Homepage for the Gatineau Economic Consortium website, including information for events happening, certain high-ranking members and the weather.">
+    <meta property="og:image" content="https://josephthomasrebelohtml.github.io/wdd231/chamber/images/share-logo.webp">
+    <meta property="og:url" content="https://josephthomasrebelohtml.github.io/wdd231/chamber/index.html">
+
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/index.mjs"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+    <header>
+
+        <img src="images/logo.webp" alt="logo for the GEC or Gatineau Economic Consortium" width="125" height="125">
+        <span>Chamber Of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="hamburger button"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current" aria-current="page"><a href="#">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Join</h1>
+        <h2>Membership Application Form</h2>
+        <div class="join-content">
+            <div class="join-form">
+                <form action="thanks.html" method="get" class="join-form-options">
+                    <fieldset>
+                        <label for="firstName">First Name*</label>
+                        <input type="text" name="firstName" id="firstName" required autocomplete="given-name"
+                            title="Enter your First Name">
+
+                        <label for="lastName">Last Name*</label>
+                        <input type="text" name="lastName" id="lastName" required autocomplete="family-name"
+                            title="Enter your last name">
+
+
+                        <label for="organizationTitle">Title</label>
+                        <input type="text" name="organizationTitle" id="organizationTitle"
+                            autocomplete="organization-title" pattern="[A-Za-z -]{7,}"
+                            title="Enter your title within the organization">
+
+
+                        <label for="email">Email*</label>
+                        <input name="email" id="email" type="email" required autocomplete="email"
+                            title="Enter your Email Address" placeholder="johndoe@gmail.com" />
+
+                        <label for="phone">Phone*</label>
+                        <input type="tel" name="phone" id="phone" required title="Enter your Phone Number"
+                            autocomplete="tel">
+
+                        <label for="organizationName">Organization Name*</label>
+                        <input type="text" name="organizationName" id="organizationName"
+                            title="Enter your Organization's name" autocomplete="organization" required>
+                        <div class="join-level-choice">
+                            <p>Membership Level*</p>
+                            <label for="np">Non Profit Membership</label>
+                            <input type="radio" name="membershipLevel" id="np" value="np" required>
+
+                            <label for="bronze">Bronze Membership</label>
+                            <input type="radio" name="membershipLevel" id="bronze" value="bronze" required>
+
+                            <label for="silver">Silver Membership</label>
+                            <input type="radio" name="membershipLevel" id="silver" value="silver" required>
+
+                            <label for="gold">Gold Membership</label>
+                            <input type="radio" name="membershipLevel" id="gold" value="gold" required>
+                        </div>
+
+                        <label for="description">Business description</label>
+                        <textarea name="description" id="description" title="Enter your business' description" rows="4" cols="23"></textarea>
+
+                        <input type="hidden" id="timestamp" name="timestamp">
+
+                        <button type="submit">Submit Your Application!</button>
+                        
+
+
+                    </fieldset>
+
+                </form>
+            </div>
+
+            <div class="join-memberships">
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <div class="contact">
+            <h2>Gatineau Economic Consortium</h2>
+            <p>320 Boulevard Saint-Joseph, Gatineau, Quebec J8Y 3Y8</p>
+            <p>info@gec.org</p>
+            <p>+1 819-329-9022</p>
+        </div>
+
+        <div class="social">
+            <a href="https://facebook.com" target="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"
+                    width="16" height="16" loading="lazy"></a>
+            <a href="https://github.com/josephthomasrebelohtml/wdd231"
+                target="https://github.com/josephthomasrebelohtml/wdd231"><img src="images/github.svg" alt="Github"
+                    width="16" height="16" loading="lazy"></a>
+            <a href="https://instagram.com" target="https://instagram.com"><img src="images/instagram.svg"
+                    alt="Instagram" width="16" height="16" loading="lazy"></a>
+        </div>
+
+        <div class="footer-copyright">
+            <p>©️<span id="currentYear"></span>🐦‍⬛ Joseph Thomas Rebelo La Rocque da Silva 🐦‍⬛ WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
