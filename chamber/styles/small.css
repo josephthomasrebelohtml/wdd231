@@ -77,6 +77,9 @@ header span {
     text-decoration: none;
     border-bottom: solid 2px var(--blue-color);
 }
+.navigation li{
+    margin: 0px;
+}
 
 .navigation li:hover {
     background-color: var(--green-color);
@@ -317,7 +320,7 @@ footer img:hover {
     flex-direction: column;
     text-align: center;
     border: solid 1px rgba(128, 128, 128, 0.5);
-    
+
     height: 480px;
     border-radius: 5px;
     width: 300px;
@@ -412,3 +415,210 @@ footer img:hover {
 figcaption {
     text-transform: capitalize;
 }
+
+
+
+/* Join Page */
+
+.join-h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.join-content h2 {
+    text-align: center;
+    background-color: var(--green-color);
+    color: var(--text-color);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+
+/* Join Form */
+
+
+form {
+    background-color: #eee;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: 700;
+}
+
+form div {
+    padding: 10px 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    display: block;
+    border: solid 1px #999;
+    border-radius: 3px;
+    padding: 0.70rem;
+    width: 100%;
+    max-width: 500px;
+    appearance: none;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+form input[type="radio"] {
+    transform: scale(1.3);
+    margin-right: 10px;
+}
+
+.join-level-choice label {
+    margin: 10px 0px;
+}
+
+form button {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--blue-color);
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+form button:hover {
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* Join Memberships */
+
+.join-memberships h3,
+li {
+    margin: 10px;
+}
+.join-memberships{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.join-memberships section {
+    height: 150px;
+    margin: 20px 5px 0px 5px;
+    background-color: #eee;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    animation: opacityIn 2s ease-in;
+}
+
+@keyframes opacityIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.join-memberships button{
+    margin: 10px;
+    margin-right: 50px ;
+    margin-left: 50px;
+    padding: 4px;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+}
+
+.join-memberships button:hover{
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Join Dialogs */
+
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+}
+dialog button:hover{
+    cursor: pointer;
+}
+dialog h3{
+    margin-top: 10px;
+}
+
+dialog p{
+margin-top: 20px;
+}
+
+
+/* Thank You Page */
+
+.thank-main {
+    height: 500px;
+}
+
+.thank-main h1{
+    text-align: center;
+}
+
+.thank-main h2{
+    background-color: var(--green-color);
+    width: 90%;
+    padding: 5px;
+    color: var(--text-color);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.thank-main p{
+    margin: 7px;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.thank-main span{
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+#thank-membership-level{
+    text-transform: capitalize;
+}
+
+.thank-you-info{
+    margin-bottom: 10px;
+}
+
+.thank-timestamp-info{
+    text-align: center;
+}
+
+
+
+

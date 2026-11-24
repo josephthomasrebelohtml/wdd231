@@ -86,7 +86,34 @@
         font-size: 1.5rem;
     }
 
-    .index-hero img{
+    .index-hero img {
         width: 80%;
+    }
+
+    /* Join Page */
+
+    .join-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 70px;
+    }
+
+    .join-memberships {
+        margin-top: 0px;
+    }
+
+    /* Thanks Page */
+
+    .thank-main {
+        height: 700px;
+    }
+
+    .thank-main h2 {
+        width: 30%;
+    }
+
+    .thank-you-info {
+        margin-bottom: 50px;
     }
 }

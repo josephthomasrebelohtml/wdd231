@@ -54,61 +54,81 @@
     </nav>
 
     <main>
-        <h1>Join</h1>
-        <h2>Membership Application Form</h2>
+        <h1 class="join-h1">Join</h1>
+        
         <div class="join-content">
             <div class="join-form">
+                <h2>Membership Application Form</h2>
                 <form action="thankyou.html" method="get" class="join-form-options">
-                    <fieldset>
+                    <div>
                         <label for="firstName">First Name*</label>
                         <input type="text" name="firstName" id="firstName" required autocomplete="given-name"
                             title="Enter your First Name">
+                    </div>
 
+                    <div>
                         <label for="lastName">Last Name*</label>
                         <input type="text" name="lastName" id="lastName" required autocomplete="family-name"
                             title="Enter your last name">
+                    </div>
 
-
+                    <div>
                         <label for="organizationTitle">Title</label>
                         <input type="text" name="organizationTitle" id="organizationTitle"
                             autocomplete="organization-title" pattern="[A-Za-z -]{7,}"
                             title="Enter your title within the organization">
+                    </div>
 
-
+                    <div>
                         <label for="email">Email*</label>
                         <input name="email" id="email" type="email" required autocomplete="email"
                             title="Enter your Email Address" placeholder="johndoe@gmail.com">
+                    </div>
 
+                    <div>
                         <label for="phone">Phone*</label>
                         <input type="tel" name="phone" id="phone" required title="Enter your Phone Number"
                             autocomplete="tel">
+                    </div>
 
+                    <div>
                         <label for="organizationName">Organization Name*</label>
                         <input type="text" name="organizationName" id="organizationName"
                             title="Enter your Organization's name" autocomplete="organization" required>
-                        <div class="join-level-choice">
-                            <p>Membership Level*</p>
-                            <label for="np">Non Profit Membership</label>
-                            <input type="radio" name="membershipLevel" id="np" value="np" required>
+                    </div>
 
-                            <label for="bronze">Bronze Membership</label>
-                            <input type="radio" name="membershipLevel" id="bronze" value="bronze" required>
 
-                            <label for="silver">Silver Membership</label>
-                            <input type="radio" name="membershipLevel" id="silver" value="silver" required>
 
-                            <label for="gold">Gold Membership</label>
-                            <input type="radio" name="membershipLevel" id="gold" value="gold" required>
-                        </div>
 
+
+
+
+                    <div class="join-level-choice">
+                        <p>Membership Level*</p>
+                        <label for="np"><input type="radio" name="membershipLevel" id="np" value="np" required>Non Profit Membership</label>
+                        
+
+                        <label for="bronze"><input type="radio" name="membershipLevel" id="bronze" value="bronze" required>Bronze Membership</label>
+                        
+
+                        <label for="silver"><input type="radio" name="membershipLevel" id="silver" value="silver" required>Silver Membership</label>
+                        
+                        <label for="gold"><input type="radio" name="membershipLevel" id="gold" value="gold" required>Gold Membership</label>
+                        
+                    </div>
+
+                    <div>
                         <label for="description">Business description</label>
                         <textarea name="description" id="description" title="Enter your business' description" rows="4"
                             cols="23"></textarea>
+                    </div>
 
-                        <input type="hidden" id="timestamp" name="timestamp">
 
-                        <button type="submit">Submit Your Application!</button>
-                    </fieldset>
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <div><button type="submit">Submit Your Application!</button></div>
+
+
 
                 </form>
             </div>
