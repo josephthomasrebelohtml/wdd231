@@ -46,9 +46,9 @@
 
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current" aria-current="page"><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
-            <li><a href="#">Join</a></li>
+            <li class="current" aria-current="page"><a href="#">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
     </nav>
@@ -58,7 +58,7 @@
         <h2>Membership Application Form</h2>
         <div class="join-content">
             <div class="join-form">
-                <form action="thanks.html" method="get" class="join-form-options">
+                <form action="thankyou.html" method="get" class="join-form-options">
                     <fieldset>
                         <label for="firstName">First Name*</label>
                         <input type="text" name="firstName" id="firstName" required autocomplete="given-name"
@@ -102,25 +102,89 @@
                         </div>
 
                         <label for="description">Business description</label>
-                        <textarea name="description" id="description" title="Enter your business' description" rows="4" cols="23"></textarea>
+                        <textarea name="description" id="description" title="Enter your business' description" rows="4"
+                            cols="23"></textarea>
 
                         <input type="hidden" id="timestamp" name="timestamp">
 
                         <button type="submit">Submit Your Application!</button>
-                        
-
-
                     </fieldset>
 
                 </form>
             </div>
 
             <div class="join-memberships">
-
+                <h2>Membership Levels</h2>
+                <section class="join-membership-card">
+                    <h3>Non Profit Membership Level</h3>
+                    <button id="non-profit-button">Learn More !</button>
+                </section>
+                <section class="join-membership-card">
+                    <h3>Bronze Membership Level</h3>
+                    <button id="bronze">Learn More !</button>
+                </section>
+                <section class="join-membership-card">
+                    <h3>Silver Membership Level</h3>
+                    <button id="silver-button">Learn More !</button>
+                </section>
+                <section class="join-membership-card">
+                    <h3>Gold Membership Level</h3>
+                    <button id="gold-button">Learn More !</button>
+                </section>
             </div>
         </div>
 
+        <dialog id="non-profit-dialog">
+            <h2>Non Profit Membership</h2>
+            <button id="non-profit-close">❌</button>
+            <h3>Benefits Include:</h3>
+            <ul>
+                <li>Free Drinks at our offices!</li>
+                <li>Invitations to All-Members Events!</li>
+                <li>Support for organizing Fund-raising events.</li>
+                <li>Listed on our website's directory.</li>
+            </ul>
+            <p>COST: 20$ Annually</p>
+        </dialog>
 
+        <dialog id="bronze-dialog">
+            <h2>Bronze Membership</h2>
+            <button id="bronze-close">❌</button>
+            <h3>Benefits Include:</h3>
+            <ul>
+                <li>Same benefits as previous tier.</li>
+                <li>Listed on our Monthly Business Journal.</li>
+                <li>24/7 Open Calls from our Support Team.</li>
+                <li>Access to Training Programs.</li>
+            </ul>
+            <p>COST: 40$ Annually</p>
+        </dialog>
+
+        <dialog id="silver-dialog">
+            <h2>Silver Membership</h2>
+            <button id="silver-close">❌</button>
+            <h3>Benefits Include:</h3>
+            <ul>
+                <li>Same Benefits as previous tiers.</li>
+                <li>Access to Personal Training Programs from Experts.</li>
+                <li>Displayed on the landing page of our websites under Spotlights.</li>
+                <li>Access to Q&A with Business Experts every month.</li>
+            </ul>
+            <p>COST: 80$ Annually</p>
+        </dialog>
+
+        <dialog id="gold-dialog">
+            <h2>Gold Membership</h2>
+            <button id="gold-close">❌</button>
+            <h3>Benefits Include:</h3>
+            <ul>
+                <li>Same benefits as previous tiers.</li>
+                <li>Invited to A Premium Weekend Stay every December.</li>
+                <li>Access to our Top-Priority Discussions.</li>
+                <li>Targeted advertising for potential customers, especially on YouTube and Google Ads.</li>
+            </ul>
+            <p>COST: 150$ Annually</p>
+        </dialog>
     </main>
 
     <footer>

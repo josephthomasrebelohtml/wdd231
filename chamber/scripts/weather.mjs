@@ -36,7 +36,7 @@ export function displayForecast(data,daysInTheFuture,textId) {
             futureDayText.innerHTML = `${currentMonth}/${currentDay} - ${temperature}&deg;C`
             
             if (temperature == 0) {
-                futureDayText.innerHTML = `0&deg;C`
+                futureDayText.innerHTML = `${currentMonth}/${currentDay} - 0&deg;C`
             }
             completed = true;
         }
